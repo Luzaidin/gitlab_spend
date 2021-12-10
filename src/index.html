@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Spend Git Lab</title>
+        <!-- <link rel="stylesheet" href="./style/index.css">
+        <script type="text/javascript" src="./scripts/index.js"></script> -->
+        <style>
+            label, input, select {
+                margin: 15px;
+            }
+        </style>
+        <script>
+            window.onload = (event) => {
+                const listProjectsBtn = document.getElementById("list_projects_btn");
+                listProjectsBtn.addEventListener('click', (event) => console.log('clicou'));
+            };
+        </script>
+    </head>
+    <body>
+        <main>
+            <div>
+                <a target="_blank" href="https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html#create-a-personal-access-token">Como gerar Git Lab Token</a>
+            </div>
+            <div>
+                <label>Token</label>
+                <input type="text"/>
+                <button id="list_projects_btn"> Listar Projetos</button>
+            </div>
+            <div>
+                <label>Projetos</label>
+                <select> 
+                    <option value="">Nenhum Projeto</option>
+                </select>
+            </div>
+        </main>
+    </body>
+</html>
